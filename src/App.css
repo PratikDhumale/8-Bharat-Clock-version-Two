@@ -1,0 +1,91 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4); /* Warm gradient background */
+    color: #2d2d2d; /* Darker neutral text color */
+    text-align: center;
+    animation: backgroundFade 12s infinite alternate; /* Smooth background animation */
+}
+
+@keyframes backgroundFade {
+    0% { background: linear-gradient(to bottom, #ff9a9e, #fad0c4); }
+    100% { background: linear-gradient(to bottom, #fbc2eb, #a6c1ee); }
+}
+
+/* Styling for ClockHeading */
+.container {
+    background-color: #6a0572; /* Deep violet */
+    color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading style */
+.fw-bolder {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Styling for ClockSlogan */
+h5 {
+    font-size: 1.6rem;
+    margin: 15px 0;
+    color: #333;
+    font-style: italic;
+    transition: color 0.3s ease;
+}
+
+h5:hover {
+    color: #ff4081; /* Bright pink hover effect */
+}
+
+/* Styling for CurrentTime */
+p {
+    font-size: 1.4rem;
+    margin: 25px auto;
+    padding: 18px 25px;
+    border: 2px solid #6a0572; /* Matches heading color */
+    border-radius: 12px;
+    background-color: #ffe3fe; /* Soft pink background */
+    color: #333;
+    display: inline-block;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+p:hover {
+    background-color: #ffd6e7; /* Light pink hover */
+    color: #6a0572; /* Deep violet text */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Button (optional, for future interactions) */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    color: white;
+    background: #ff4081; /* Bright pink */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #d500f9; /* Vivid purple */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
